@@ -4,7 +4,7 @@
                 {% if found %}
                     {% if media %}
                         <h1 class="text-blue-500 text-center text-lg lg:text-xl xl:text-3xl w-full break-all">
-                            Download {{name}}
+                            🥰 Download {{name}}
                         </h1>
 
                         <div class="mx-auto w-full p-2 md:w-2/4 p-2">
@@ -12,7 +12,7 @@
                                 <img class="mx-auto rounded" src="{{thumbnail}}" alt="{{name}}">
                             {% elif media.video %}
                                 <div id="video-warning" class="mx-auto p-4 bg-gray-600 text-gray-300 rounded border text-center hidden break-words">
-                                    <p> Video {{name}} could not be played!</p>
+                                    <p> 🤒 Damn!? Video {{name}} could not be played!</p>
                                 </div>
 
                                 <div id="my-video-wrapper">
@@ -40,7 +40,7 @@
                                 </script>
                             {% elif media.audio %}
                                  <div id="audio-warning" class="mx-auto p-4 bg-gray-600 text-gray-300 rounded border text-center hidden break-words">
-                                    <p> Audio {{name}} could not be played!</p>
+                                    <p> 🤒 Damn!? Audio {{name}} could not be played!</p>
                                 </div>
 
                                 <div id="my-audio-wrapper">
