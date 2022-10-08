@@ -39,7 +39,7 @@ class LogoView(BaseView):
                 color = tuple((random.randint(0, 255) for _ in range(3)))
                 im = Image.new("RGB", (W, H), color)
                 draw = ImageDraw.Draw(im)
-                font = ImageFont.truetype("arial.ttf", 50)
+                font = ImageFont.truetype("app/fonts/arial.ttf", 50)
                 w, h = draw.textsize(chat_name, font=font)
                 draw.text(
                     ((W - w) / 2, (H - h) / 2), chat_name, fill="white", font=font

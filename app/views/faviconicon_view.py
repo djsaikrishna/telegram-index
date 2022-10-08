@@ -16,7 +16,7 @@ class FaviconIconView(BaseView):
             color = tuple((random.randint(0, 255) for _ in range(3)))
             im = Image.new("RGB", (W, H), color)
             draw = ImageDraw.Draw(im)
-            font = ImageFont.truetype("arial.ttf", 100)
+            font = ImageFont.truetype("app/fonts/arial.ttf", 100)
             w, h = draw.textsize(text, font=font)
             draw.text(((W - w) / 2, (H - h) / 2), text, fill="white", font=font)
             im.save(favicon_path, "JPEG")
